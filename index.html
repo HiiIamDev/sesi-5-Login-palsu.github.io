@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
+    <title>Sesi - 5 | Login (Fake)</title>
+</head>
+<!-- JS -->
+<script>
+    const passFunc = () => {
+        var input = document.getElementById('inpPass')  
+        input.type === 'password' ? input.type = 'text' : input.type = 'password'
+    }
+</script>
+<style>
+    @font-face {
+        font-family: Falling Sky;
+        src: url(/Assets/Fonts/FallingSkyBlackOblique-j37y.otf);
+    }
+</style>
+<body style="
+    margin: 0;
+    padding: 0;
+    background-image: url(/Assets/BG.jpg);
+    font-family: Arial, Helvetica, sans-serif;
+">
+<div class="bodyContainer" style="background-image: url(/Assets/BG.jpg); background-repeat: no-repeat;">
+    <nav 
+        style="
+            display: flex;
+            justify-content: space-around;
+            padding: 0 20px;
+            /* background-color: rgba(0, 0, 0, 0.801) */
+            background-image: url(/Assets/headerbg.png);
+            background-repeat: no-repeat;
+            
+        "
+    >
+    <h2 style="
+        color : white
+    "
+    >Dudul Website</h2>
+    <ul style="
+        display: flex;
+        justify-content: space-evenly;
+        width: 40%;
+        color: white;
+        ">
+        <li style="margin: 10px; list-style: none; "><a href="#" style="text-decoration: none; color: white">Home</a></li>
+        <li style="margin: 10px; list-style: none; "><a href="#" style="text-decoration: none; color: white">About</a></li>
+        <li style="margin: 10px; list-style: none; "><a href="#" style="text-decoration: none; color: white">Contact</a></li>
+        <li style="margin: 10px; list-style: none; "><a href="#" style="text-decoration: none; color: white">Service</a></li>
+        <li style="margin: 10px; list-style: none; "><a href="#" style="
+            text-decoration: none; 
+            padding: 10px; 
+            background-color: #47B5FF; 
+            color: white; 
+            border-radius: 12px;
+        ">Daftar</a></li>
+    </ul>
+</nav>
+    <!-- LOGIN -->
+    <div class="login" style="
+        margin-top: 10%; 
+        display: flex;
+        justify-content: center;
+    ">
+        <div class="containerLog" style="
+            color: white;
+            width: 30%;
+            height: 400px;
+            text-align: center;
+            border-radius: 12px;
+            background-color: #100F0F;
+        ">
+        <div class="headerTitle">
+            <h2>Sign In</h2>
+            <hr style="background-color: #555555; color: #555555; width: 70%; height:2px; border-radius:12px; border: none;">
+        </div>
+        <div class="form" style="transform: translateY(20px);">
+            <form>
+                <input type="text" placeholder="Masukan Nama Kamu" required style="
+                    outline: none;
+                    border: none;
+                    width: 55%;
+                    height: 20px;
+                    padding: 10px;
+                    color: #ffffff;
+                    background: none;
+                    border-bottom: 2px solid #5ebaf8;
+                "> <br>      
+                <input type="email" placeholder="Masukan Email Kamu" required style="
+                    outline: none;
+                    border: none;
+                    width: 55%;
+                    height: 20px;
+                    padding: 10px;
+                    color: #ffffff;
+                    background: none;
+                    border-bottom: 2px solid #5ebaf8;"
+                > <br>
+                <input type="password" placeholder="Masukan Password Kamu" id="inpPass" required style="
+                    outline: none;
+                    border: none;
+                    width: 55%;
+                    height: 20px;
+                    padding: 10px;
+                    color: #ffffff;
+                    background: none;
+                    border-bottom: 2px solid #5ebaf8;"  
+                > <br>
+                <br>
+                <div class="showPW">
+                    <label for="inpPw" style="
+                        user-select: none;
+                        margin-top: 1s5px;
+                        font-size: 15px;
+                        color: #727272;
+
+                    ">Show Password  
+                        <input type="checkbox" name="ShowPW" id="inpPw" onclick="passFunc()">
+                    </label>
+                </div>
+                
+                <div class="subBtn" style="
+                    transform: translateY(20px);
+                    color: #727272;
+                ">
+                    <button style="
+                        transform: translateY(20px);
+                        padding: 15px;
+                        border: 0;
+                        background-color: #5fbfff;
+                        color: white;
+                        font-size: 16px;
+                        border-radius: 12px;
+                        width: 90%;
+                        font-family: Falling Sky;
+                        cursor: pointer;
+                    ">Submit</button>
+                </div>
+                <div class="headerPenting" style="transform: translateY(55px);">
+                    <span style="font-size: 14px; color: #aaaaaa;">Sudah Punya Akun? <a href="#" style="color: rgb(157, 73, 236);">Masuk Disini</a> Yuk!</span>
+                </div>
+            </form>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
